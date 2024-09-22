@@ -23,6 +23,10 @@ main {
     color: orange;
 }
 
+.not-checked{
+    color: white;
+}
+
 .offcanvas-top{
     height: fit-content;
 }
