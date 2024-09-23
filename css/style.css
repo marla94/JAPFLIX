@@ -10,23 +10,31 @@
     background-color: beige;
 }
 
-.card-content{
+.card-content {
     height: 150px;
     overflow: auto;
 }
 
 main {
     min-height: calc(100vh - 100px);
-  }
+}
 
-.checked{
+.checked {
     color: orange;
 }
 
-.not-checked{
+.not-checked {
     color: white;
 }
 
-.offcanvas-top{
+.half-checked {
+    background: -webkit-linear-gradient(to right, orange 50%, white 50%);
+    background: linear-gradient(to right, orange 50%, white 50%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.offcanvas-top {
     height: fit-content;
 }

@@ -64,11 +64,14 @@ searchButton.addEventListener('click', () => {
     }
 })
 
+// Función para mostrar estrellas en lugar de números
 function drawStars(rating) {
     let ratingHTML = ""
     for (let i = 1; i <= 10; i++) {
         if (i <= rating) {
             ratingHTML += '<span class="fa fa-star checked"></span>';
+        } else if ((i - 0.5) <= rating /*&& i > rating*/) {
+            ratingHTML += '<span class="fa fa-star half-checked"></span>';
         } else {
             ratingHTML += '<span class="fa fa-star not-checked"></span>';
         }
